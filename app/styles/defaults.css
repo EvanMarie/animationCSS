@@ -20,12 +20,15 @@
     --accentDark: #09232e;
     --accentTitle: #f5ebb5;
     --accentPageTitle: #fac364;
+    --codeColor: #f5ebb5;
 
     /* FONTSIZES */
     --smallestText: 0.5rem;
     --smallerText: 0.75rem;
     --smallText: 0.875rem;
-    --normalText: 1rem;
+    --codeText: 1rem;
+    --normalText: 1.1rem;
+    --mediumText: 1.25rem;
     --largeText: 1.5rem;
     --largerText: 2rem;
     --largestText: 3rem;
@@ -41,7 +44,7 @@
     --largestSpace: 3rem;
 
     /* FONTWEIGHTS */
-    --lightestWeight: 300;
+    --lightWeight: 300;
     --normalWeight: 400;
     --mediumWeight: 500;
     --semiBoldWeight: 600;
@@ -56,6 +59,7 @@
 
 * {
     box-sizing: border-box;
+    font-weight: var(--lightWeight);
 }
 
 body {
@@ -63,11 +67,32 @@ body {
     margin: 0px;
     font-family: 'Heebo', sans-serif;
     background-color: var(--darker);
+    font-size: var(--codeText);
 }
 
-h1, h2, h3, p {
+@media (min-width: 600px) {
+    body {
+        font-size: var(--normalText);
+    }
+}
+
+h1, h2, h3, p, ul, li, ol, a, button, input, textarea, select {
     margin: 0px;
 }
+
+ul {
+    list-style: none;
+}
+
+        /* bullet style */
+        ul li::before {
+            content: "✦";
+            font-size: 0.65em;
+            color: var(--accentLight);
+            display: inline-block;
+            width: 1.75em;
+            margin-left: -2em;
+        }
 
 h1 {
     font-size: var(--largestText);
@@ -89,7 +114,11 @@ h3 {
 }
 
 p {
-    font-size: var(--normalText);
     color: var(--lightest);
     font-weight: var(--normalWeight);
+}
+
+b {
+    font-weight: var(--mediumWeight);
+    text-decoration: underline;
 }

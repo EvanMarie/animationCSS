@@ -1,0 +1,36 @@
+/* EX0101*/
+.ex0101-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: myFirstAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myFirstAnimation {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    100% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+}

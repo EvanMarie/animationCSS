@@ -20,7 +20,7 @@
     background-size: 1000% 1000%;
     animation: gradientAnimation 360s linear infinite;
     color: var(--lightest);
-    padding: var(--largeSpace);
+    padding: var(--smallestSpace);
 }
 
 @keyframes gradientAnimation {
@@ -42,4 +42,25 @@
     width: 100%;
     max-width: 1000px;
     margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 600px) {
+    .main-container {
+        padding: var(--smallSpace);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .main-container {
+        padding: var(--normalSpace);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .main-container {
+        padding: var(--largeSpace);
+    }
 }

@@ -4,21 +4,15 @@ import SectionContainer from "~/components/organizational/sectionContainer";
 export default function PageOne() {
   return (
     <PageContainer header="Page Number">
-      <SectionContainer header="Section One" subheader="subheader">
-        -- SECTION CONTENT --
-      </SectionContainer>
-      <SectionContainer header="Section Two" subheader="subheader">
-        -- SECTION CONTENT --
-      </SectionContainer>
-      <SectionContainer header="Section Three" subheader="subheader">
-        -- SECTION CONTENT --
-      </SectionContainer>
-      <SectionContainer header="Section Four" subheader="subheader">
-        -- SECTION CONTENT --
-      </SectionContainer>
-      <SectionContainer header="Section Five" subheader="subheader">
-        -- SECTION CONTENT --
-      </SectionContainer>
+      {/* 
+      <Ex01 />
+      <Ex02 />
+      <Ex03 />
+      <Ex04 />
+      <Ex05 />
+      <Ex06 />
+      <Ex07 /> 
+      */}
     </PageContainer>
   );
 }

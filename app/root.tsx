@@ -11,6 +11,7 @@ import organizationalStyles from "./styles/organizational.css";
 import defaultStyles from "./styles/defaults.css";
 import mainContainerStyles from "./styles/mainContainer.css";
 import MainContainer from "./components/organizational/mainContainer";
+import PageOneStyles from "./styles/exampleStylesOne.css";
 
 export const links: LinksFunction = () => [
   {
@@ -23,11 +24,12 @@ export const links: LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   },
   { rel: "stylesheet", href: defaultStyles },
   { rel: "stylesheet", href: organizationalStyles },
   { rel: "stylesheet", href: mainContainerStyles },
+  { rel: "stylesheet", href: PageOneStyles },
 ];
 
 export default function App() {
